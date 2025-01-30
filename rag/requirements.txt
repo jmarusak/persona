@@ -1,0 +1,4 @@
+mypy
+langchain
+langchain-core
+langchain-google-vertexai
