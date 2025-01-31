@@ -1,4 +1,5 @@
 mypy
+streamlit
 langchain
 langchain-core
 langchain-google-vertexai
