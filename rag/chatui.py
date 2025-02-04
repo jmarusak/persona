@@ -1,6 +1,6 @@
 import streamlit as st
 
-from model import ask
+from model import generate
 
 def main():
     st.title("Chatbot")
@@ -9,7 +9,7 @@ def main():
 
     answer = ""
     if st.button("Submit"):
-        answer = ask(question) 
+        answer = generate(question) 
     
     st.text_area("Answer:", answer, height=200)
 

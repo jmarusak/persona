@@ -3,7 +3,7 @@ import os
 from langchain_core.messages import HumanMessage
 from langchain_google_vertexai import ChatVertexAI
 
-def ask(question):
+def generate(question):
     with open("../../md/prompt.md", "r", encoding="utf-8") as f:
         prompt = f.read()
     
@@ -28,5 +28,5 @@ def ask(question):
     return answer.content
 
 if __name__ == '__main__':
-    answer = ask('What is your name?')
+    answer = generate('What is your name?')
     print(answer)
